@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.barlificent.ratify1.FavoritesActivity">
+
+    <FrameLayout
+        android:paddingTop="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:id="@+id/sfssav"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center_horizontal"
+                android:background="@mipmap/background_ratify">
+                <ImageView
+                    android:src="@drawable/ic_favorite_white_36dp"
+                    android:padding="25dp"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp" />
+            </LinearLayout>
+            <com.barlificent.ratify1.CustomClasses.FontTextView
+                android:layout_below="@id/sfssav"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:id="@+id/fav_nothing"
+                android:text="Nothing here yet."
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginTop="-40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:id="@+id/fav_list"
+                android:layout_marginTop="-70dp"
+                android:layout_below="@id/sfssav"
+                android:layout_width="match_parent"
+                android:minHeight="200dp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </ScrollView>
+    </FrameLayout>
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/actionBarStyle">
+
+
+        <com.barlificent.ratify1.CustomClasses.FontTextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Favorites"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/cancel_fav_lin"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:background="#aaffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp">
+        <com.barlificent.ratify1.CustomClasses.FontTextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="true"
+            android:text="Cancel"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

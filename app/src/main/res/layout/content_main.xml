@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.barlificent.ratify1.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:elevation="5dp"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"/>
+
+    <it.sephiroth.android.library.bottomnavigation.BottomNavigation
+        android:id="@+id/BottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        app:bbn_entries="@menu/fav_menu"
+        app:bbn_scrollEnabled="false"
+        android:visibility="gone"
+        app:bbn_alwaysShowLabels = "true"
+        app:bbn_rippleColor = "@color/colorAccent"
+        android:background="#fff"
+        app:bbn_itemColorInactive = "#aaa"
+        app:bbn_itemColorActive = "#000"
+        app:bbn_badgeProvider="@string/bbn_badgeProvider"
+        app:layout_behavior="@string/bbn_phone_view_behavior" />
+    <com.barlificent.ratify1.Adapters.NonSwipeableViewPager
+        android:id="@+id/main_viewpager"
+        android:paddingBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="#fff"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/main_location_bottom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_photo_library_black_36dp"
+            android:tint="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/main_location_bottom"
+            android:padding="10dp"
+            android:src="@drawable/ic_notifications_black_24dp"
+            android:tint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/bottom_settings"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_settings_black_36dp"
+            android:tint="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/bottom_settings"
+            android:padding="10dp"
+            android:src="@drawable/ic_people_black_36dp"
+            android:tint="@color/colorPrimary" />
+    </RelativeLayout>
+</RelativeLayout>

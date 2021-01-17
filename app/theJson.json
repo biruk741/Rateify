@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "460517978106",
+    "firebase_url": "https://ratify1-c299d.firebaseio.com",
+    "project_id": "ratify1-c299d",
+    "storage_bucket": "ratify1-c299d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460517978106:android:66ebd12fd79380d9",
+        "android_client_info": {
+          "package_name": "com.barlificent.ratify1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460517978106-gvh3n8q74hca09tvekm84fj0i25ao874.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiGggNlEcgGda-hbcLl-wGMM8cP_gdBBg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

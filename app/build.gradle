@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.barlificent.ratify1"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    //    compile 'com.hbb20:ccp:2.1.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.google.firebase:firebase-auth:10.2.0'
+    compile 'com.google.android.gms:play-services-auth:10.2.0'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.google.firebase:firebase-database:10.2.0'
+    compile 'com.aurelhubert:ahbottomnavigation:2.0.4'
+    compile 'com.android.support:support-v4:24.2.1'
+//    compile 'nl.psdcompany:duo-navigation-drawer:2.0.7'
+    compile 'com.github.Yalantis:GuillotineMenu-Android:1.2'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.google.firebase:firebase-storage:10.2.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.lorentzos.swipecards:library:1.0.9@aar'
+    compile 'com.trafi:rating-seek-bar:0.4-alpha'
+    compile 'com.wang.avi:library:2.1.3'
+    compile 'com.github.medyo:fancybuttons:1.8.4'
+    compile 'it.sephiroth.android.library.bottomnavigation:bottom-navigation:2.0.1-rc1'
+    compile 'com.github.aakira:expandable-layout:1.6.0@aar'
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
+    compile 'com.google.firebase:firebase-core:10.2.0'
+    compile 'agency.tango.android:material-intro-screen:0.0.5'
+    compile 'com.lorentzos.swipecards:library:1.0.9@aar'
+    compile 'ru.bullyboo.view:circleseekbar:1.0.3'
+    compile 'jp.wasabeef:blurry:2.1.1'
+    compile 'com.github.jd-alexander:LikeButton:0.2.3'
+
+    // todo Cameraview
+    compile 'com.otaliastudios:cameraview:1.4.1'
+
+
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+//    compile 'com.yalantis:phoenix:1.2.3'
+//    compile 'com.daprlabs.aaron:swipedeck:2.0.6'
+    //todo      chatSDK starts here.
+//    compile 'co.chatsdk.chatsdk:chat-sdk-core:4.0.8'
+//    compile 'co.chatsdk.chatsdk:chat-sdk-ui:4.0.8'
+//    compile 'co.chatsdk.chatsdk:chat-sdk-firebase-adapter:4.0.8'
+//    compile 'co.chatsdk.chatsdk:chat-sdk-firebase-file-storage:4.0.8'
+    //todo      chatSDK ends here.
+//    compile 'com.github.florent37:bubbletab:1.0.2'
+//    compile 'com.jakewharton:butterknife:8.8.1'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+}
+apply plugin: 'com.google.gms.google-services'

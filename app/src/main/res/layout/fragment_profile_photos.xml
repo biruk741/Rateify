@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.barlificent.ratify1.Fragments.ProfileFragments.ProfilePhotosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Uploads" />
+    <LinearLayout
+        android:id="@+id/loading_profile_photos"
+        android:layout_width="match_parent"
+        android:padding="32dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <com.barlificent.ratify1.CustomClasses.FontTextView
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:text="Loading..."
+        android:layout_weight="1"
+            android:padding="5dp"
+        android:layout_height="0dp" />
+        <com.wang.avi.AVLoadingIndicatorView
+            app:indicatorName="LineScaleIndicator"
+            app:indicatorColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/uploads_grid"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+    </ListView>
+
+</LinearLayout>

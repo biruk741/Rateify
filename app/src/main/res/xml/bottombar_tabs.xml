@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_friends"
+        icon="@drawable/ic_people_black_36dp"
+        barColorWhenSelected="#d84315"
+        title="Friends" />
+    <tab
+        id="@+id/tab_messages"
+        icon="@drawable/ic_chat_black_24dp"
+        barColorWhenSelected="#558b2f"
+        title="Messages" />
+    <tab
+        id="@+id/tab_upload"
+        icon="@drawable/ic_camera_white_48dp"
+        barColorWhenSelected="#00897b"
+        title="Upload" />
+    <tab
+        id="@+id/tab_rate"
+        icon="@drawable/ic_star_black_48dp"
+        barColorWhenSelected="#1565c0"
+        title="Rate" />
+    <tab
+        id="@+id/tab_leaderboard"
+        icon="@mipmap/leaderboard"
+        barColorWhenSelected="#d32f2f"
+        title="Leaderboard" />
+</tabs>

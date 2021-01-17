@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/background_ratify"
+    android:padding="16dp"
+    android:layout_height="100dp">
+    <com.barlificent.ratify1.CustomClasses.FontTextView
+        android:layout_width="wrap_content"
+        android:text="Enter display name"
+        android:textColor="#fff"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:shadowColor="#fff"
+        android:textColor="#fff"
+        android:textColorHighlight="#fff"
+        android:textColorLink="#fff"
+        android:id="@+id/dialogField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

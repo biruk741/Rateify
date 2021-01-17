@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/black"
+    app:bbn_badgeColor="#FFFF0000"
+    app:bbn_rippleColor="#33ffffff">
+    <item
+        android:id="@+id/edit_fav"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_mode_edit_white_24dp"
+        android:title="Edit" />
+    <item
+        android:id="@+id/cancel_fav"
+        app:showAsAction="always"
+        android:visible="false"
+        tools:visible = "true"
+        android:icon="@drawable/ic_close_white_24dp"
+        android:title="Cancel" />
+    <item
+        android:id="@+id/bbn_item2"
+        app:showAsAction="never"
+        android:title="Messages" />
+</menu>

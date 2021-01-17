@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_profile"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.barlificent.ratify1.ProfileActivity"
+    tools:showIn="@layout/activity_profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scroll_profile"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/profile_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/profile_linear"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:minHeight="500dp"
+                android:orientation="vertical">
+                <com.barlificent.ratify1.Adapters.NonSwipeableViewPager
+                    android:id="@+id/profile_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:layout_width="match_parent"
+        android:id="@+id/ahbottomNav"
+        android:elevation="0dp"
+        android:layout_alignParentBottom = "true"
+        android:layout_height="56dp"/>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/linear"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:src="@mipmap/user_icon"
+        tools:src = "@mipmap/da86c18c797e47cafd756cb3763cf85b"
+        android:id = "@+id/image_view_inoutList"
+        android:layout_margin="16dp"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:id = "@+id/text_container"
+        >
+
+        <com.barlificent.ratify1.CustomClasses.FontTextView
+            android:id="@+id/titleUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Jenna Sue"
+            android:paddingRight="16dp"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+        <com.barlificent.ratify1.CustomClasses.FontTextView
+            android:id="@+id/pointsUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Points: 313"
+            android:paddingRight="16dp"
+            android:maxLines="1"
+            android:textColor="#444"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <com.barlificent.ratify1.CustomClasses.FontTextView
+        android:id="@+id/leaderboard_rank"
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        tools:text = "1st"
+        android:textColor="#000"
+        android:padding="16dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

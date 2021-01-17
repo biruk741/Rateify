@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragments.HomeFragments.FriendsFragment">
+    <android.support.design.widget.FloatingActionButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_black_24dp"
+        android:tint="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:background="@mipmap/background_ratify"
+    android:layout_height="60dp"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:contentPadding="8dp"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/expand_requests"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/friends_expand"
+            android:layout_centerVertical="true"
+            android:layout_width="115dp"
+            android:minHeight="35dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/colorPrimary"
+            fancy:fb_focusColor="@color/colorPrimary"
+            fancy:fb_radius="50dp"
+            fancy:fb_text="Friends"
+            fancy:fb_textColor="#FFFFFF" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/requests_expand"
+                android:layout_width="115dp"
+                android:minHeight="35dp"
+                android:layout_height="wrap_content"
+                fancy:fb_borderWidth="1dp"
+                fancy:fb_defaultColor="#9e9e9e"
+                fancy:fb_focusColor="#c62828"
+                fancy:fb_radius="50dp"
+                fancy:fb_text="Requests"
+                fancy:fb_textColor="#FFFFFF" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/no_friends"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="#eee"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_people_black_48dp"
+                android:layout_width="100dp"
+                android:tint="#aaa"
+                android:layout_marginBottom="16dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:layout_width="250dp"
+                android:textColor="#aaa"
+                android:text="No friends here yet. You will get friends when you send requests to people."
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#eee"
+        android:visibility="invisible"
+        android:id="@+id/no_requests"
+        android:layout_marginTop="60dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_send_black_48dp"
+                android:layout_width="100dp"
+                android:tint="#aaa"
+                android:layout_marginBottom="16dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:layout_width="250dp"
+                android:textColor="#eee"
+                android:text="No requests yet. When people send you requests, they appear here. :)"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+        <ListView
+            android:id="@+id/requestsList"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:paddingTop="80dp"
+            android:layout_height="match_parent">
+
+        </ListView>
+    <ListView
+        android:paddingTop="80dp"
+        android:id="@+id/friendsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</RelativeLayout>
+

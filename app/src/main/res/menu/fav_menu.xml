@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    app:bbn_badgeColor="#FFFF0000"
+    app:bbn_rippleColor="#33ffffff">
+    <item
+        android:id="@+id/bbn_item1"
+        android:color="@color/colorPrimary"
+        android:icon="@drawable/ic_people_white_36dp"
+        android:title="Friends" />
+    <item
+        android:id="@+id/bbn_item2"
+        android:color="@android:color/holo_green_dark"
+        android:icon="@drawable/ic_chat_white_24dp"
+        android:title="Messages" />
+    <item
+        android:id="@+id/bbn_item3"
+        android:color="@android:color/holo_orange_dark"
+        android:icon="@drawable/ic_star_white_48dp"
+        android:title="Rate" />
+    <item
+        android:id="@+id/action4"
+        android:color="#304ffe"
+        android:icon="@drawable/ic_camera_white_48dp"
+        android:title="Upload" />
+    <item
+        android:id="@+id/action5"
+        android:color="#ff525e"
+        android:icon="@mipmap/leaderboard"
+        android:title="Leaderboard" />
+</menu>

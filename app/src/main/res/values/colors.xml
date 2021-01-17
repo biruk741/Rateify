@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/prim</color>
+    <color name="colorPrimaryDark">@color/primDark</color>
+    <color name="colorAccent">#ff6522</color>
+    <color name="text_dark">#212121</color>
+    <color name="trans_white">#88ffffff</color>
+    <color name="trans_black">#3f000000</color>
+    <color name="trans_orange">#56ff6522</color>
+    <color name="trans_black_dark">#75000000</color>
+    <color name="blue">#1e82e9</color>
+    <color name="green">#79e91e</color>
+    <color name="orange">#ff6522</color>
+    <color name="prim">#e91e63</color>
+    <color name="primDark">#d81b60</color>
+    <color name="trans_blacks">#39000000</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

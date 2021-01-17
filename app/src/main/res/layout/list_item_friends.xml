@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/friend_image_list"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/user_icon"
+            tools:src="@mipmap/da86c18c797e47cafd756cb3763cf85b" />
+
+        <TextView
+            android:id="@+id/friend_name_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingRight="16dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            tools:text="Jenna Sue" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/requests_list_Linear"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/accept_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#7ab800"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_fontIconResource="&#xf00c;"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="50dp"
+            fancy:fb_text=""
+            android:layout_marginRight="6dp"
+            fancy:fb_textColor="#FFFFFF" />
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/deny_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#e53935"
+            fancy:fb_focusColor="#c62828"
+            fancy:fb_fontIconResource="&#xf00d;"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="50dp"
+            fancy:fb_text=""
+            fancy:fb_textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>
